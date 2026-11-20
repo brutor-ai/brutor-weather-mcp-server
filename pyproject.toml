@@ -1,0 +1,15 @@
+[project]
+name = "brutor-weather-mcp-server"
+version = "1.0.0"
+description = "Minimal remote MCP server exposing a weather tool — demo MCP server for the Brutor AI Governance Platform."
+readme = "README.md"
+requires-python = ">=3.13"
+# Deliberately minimal. This repo runs the BARE streamable-HTTP MCP
+# server (no auth, no FastAPI wrapper) — it only needs the MCP SDK
+# and an HTTP client. The API-key / OAuth variants in the original
+# `weather-mcp-server` repo pull in fastapi / starlette / pyjwt /
+# authlib; none of that is needed here.
+dependencies = [
+    "httpx>=0.24.0",
+    "mcp[cli]>=1.9.3",
+]

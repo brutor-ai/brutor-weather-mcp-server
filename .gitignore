@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# uv lock is committed (reproducible installs) — do NOT ignore uv.lock
+
+# Editor / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
